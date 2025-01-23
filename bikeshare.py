@@ -162,7 +162,7 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     counts_of_user_type = df['User Type'].value_counts()
-    print("사용자 유형별 개수:")
+    print("Count by User type:")
     print('-'*40)
     print(f"{counts_of_user_type}\\n")
 
