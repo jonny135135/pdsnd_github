@@ -17,6 +17,7 @@ Users can filter data by city, month, and day of the week to gain insights into 
 
 ### Files used
 The project consists of three CSV files containing datasets for each city:
+
 Chicago.csv
 New York City.csv
 Washington.csv
