@@ -39,7 +39,7 @@ def get_filters():
 
   
     while not (day in valid_days):
-        day = input("Input day of the week to filter (예: 'all', 'monday' ... 'sunday'): ").lower()
+        day = input("Input day of the week to filter (example: 'all', 'monday' ... 'sunday'): ").lower()
 
     # print the input filter information
     print(f"\\n - city: '{city}', month: '{month}', day: '{day}'")
@@ -95,9 +95,9 @@ def time_stats(df):
     print(f"Most frequent Day is: {common_day}")
 
     # TO DO: display the most common start hour
-    df['Hour'] = df['Start Time'].dt.hour  # 'Start Time'에서 시간만 추출
+    df['Hour'] = df['Start Time'].dt.hour  
     common_hour = df['Hour'].mode()[0]
-    print(f"most frequent hour: {common_hour}시")
+    print(f"most frequent hour: {common_hour}h")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -162,7 +162,7 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     counts_of_user_type = df['User Type'].value_counts()
-    print("사용자 유형별 개수:")
+    print("Count by User Type:")
     print('-'*40)
     print(f"{counts_of_user_type}\\n")
 
