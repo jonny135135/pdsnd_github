@@ -31,7 +31,7 @@ def get_filters():
 
     # repeat until valid month
     while not (month in valid_months):
-        month = input("Input month to filter (예: 'all', 'january' ... 'december'): ").lower()
+        month = input("Input month to filter (ex: 'all', 'january' ... 'december'): ").lower()
 
    
     day = ""
@@ -39,7 +39,8 @@ def get_filters():
 
   
     while not (day in valid_days):
-        day = input("Input day of the week to filter (example: 'all', 'monday' ... 'sunday'): ").lower()
+        day = input("Input day of the week to filter (ex: 'all', 'monday' ... 'sunday'): ").lower()
+
 
     # print the input filter information
     print(f"\\n - city: '{city}', month: '{month}', day: '{day}'")
@@ -162,7 +163,8 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     counts_of_user_type = df['User Type'].value_counts()
-    print("Count by User Type:")
+    print("Count by User type:")
+
     print('-'*40)
     print(f"{counts_of_user_type}\\n")
 
